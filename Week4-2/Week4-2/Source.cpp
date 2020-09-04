@@ -5,7 +5,7 @@ int findFloodday(int* ptr,int n) {
 	int i,cnt=0;
 	for (i = 0;i < n;i++) {
 		if (ptr[i] >= 80) {
-			printf("%d\n", ptr[i]);
+			cnt++;
 		}
 		else if(ptr[i]>=20 && ptr[i]-ptr[i-1]>=10 && i!=0)
 		{
